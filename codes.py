@@ -22,6 +22,9 @@ def statuscode_resolver():
                         print("[+]" + domain + "\t" + code)
             except Exception as e:
                 continue
+            except KeyboardInterrupt as k:
+                print("KeyboardInterrupt")
+                break
 
 
 def help():
